@@ -26,11 +26,8 @@ function addValue(someNumber) {
     document.getElementById("previous-operand-display").innerHTML += someNumber;
 }
 
-//FUNCTIONS INVOKE
+// INVOKING  FUNCTIONS
 addition(2, 67);
 substraction(8, 4);
 multiplication(2, 3);
 division(10, 5);
-
-
-console.log('fin de archivo');
