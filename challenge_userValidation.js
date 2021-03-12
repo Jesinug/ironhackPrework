@@ -1,5 +1,7 @@
 /*
-Have the function CodelandUsernameValidation(str) take the str parameter being passed and determine if the string is a valid username according to the following rules:
+Have the function CodelandUsernameValidation(str) take the str parameter being 
+passed and determine if the string is a valid username according to the 
+following rules:
 
 1. The username is between 4 and 25 characters.
 2. It must start with a letter.
@@ -14,31 +16,29 @@ Input: "u__hello_world123"
 Output: true
 */
 
-function CodelandUsernameValidation(str) { 
 
-for (let i = 0; i<=userName.length-1; i++);
-  if (str.length < 4 && userName.length > 25) {
-  return "invalid password";
-  } else {
-    return "valid password";
-  }
-}
+function CodelandUsernameValidation(str) {
+  let userName = str;
+  let alertNo = "invalid username!";
+  if (userName.length < 4 || userName.length > 25) {
+    return alertNo;
+  };
+  if (!(/[a-zA-Z]/).test(userName.charAt(0))) {
+    return alertNo
+  };
+  if (!(/^(\w|\.|-)+$/).test(userName)) {
+    return alertNo
+  };
+  if (userName.charAt(userName.length - 1) === "_") {
+    return alertNo
+  };
+
+  // code goes here  
+  return str;
+
+};
+
 
 
 // keep this function call here 
-console.log(CodelandUsernameValidation("jesi");
-
-/*
-switch (userName.length >= 4) {
-  case [i] typeof != 'string' :
-  console.log("invalid password")
-
-  let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
-
-if (year < 2015) {
-  alert( 'Too early...' );
-} else if (year > 2015) {
-  alert( 'Too late' );
-} else {
-  alert( 'Exactly!' );
-}
+console.log(CodelandUsernameValidation("jjhsjhjk"));
