@@ -17,8 +17,7 @@ Output: true
 */
 
 
-function CodelandUsernameValidation(str) {
-  let userName = str;
+function CodelandUsernameValidation(userName) {
   let alertNo = "invalid username!";
   if (userName.length < 4 || userName.length > 25) {
     return alertNo;
